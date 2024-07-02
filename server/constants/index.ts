@@ -1,10 +1,13 @@
-const EN = {
+/**
+ * This file contains all the constants used in the application in english version.
+ */
+export const EN = {
   owner: {
     name: {
       firstName: 'Nehemie',
       lastName: 'Mombanga',
     },
-    role: 'Software Engineer',
+    title: 'Software Engineer',
     descriptions: {
       short:
         'Specialized in web development. Dedicated to redefining technological limits.',
@@ -30,4 +33,7 @@ const EN = {
   ],
 };
 
+/**
+ * This file contains all the constants used in the application in french version.
+ */
 const FR = {};

@@ -33,6 +33,11 @@ const config = {
         'accordion-up': 'accordion-up 0.2s ease-out',
       },
 
+      //? Background images
+      backgroundImage: {
+        bruit: "url('/ressources/noise-background.gif')",
+      },
+
       //? Custom colors
       colors: {
         nm: {
