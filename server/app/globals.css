@@ -7,6 +7,7 @@ body {
 }
 
 @layer base {
+  /*? set up the main layout of the page */
   .main-grid {
     display: grid;
     grid-template-columns: max-content 1fr;
@@ -16,10 +17,12 @@ body {
     }
   }
 
+  /*? Add padding to the page */
   .p-side {
-    @apply px-[60px];
+    @apply px-7 md:px-10 2xl:px-[60px];
   }
 
+  /*? Add a gradient shadow to the bottom of the page */
   .gradient-shadow {
     width: 100vw;
     height: 30%;
@@ -30,6 +33,7 @@ body {
     );
   }
 
+  /*? Add a gradient shadow to the top of the page */
   .overlay::before {
     content: '';
     position: fixed;
@@ -38,9 +42,9 @@ body {
     bottom: 0;
     left: 0;
     background-image: url('/ressources/noise-background.gif');
-    background-repeat: repeat; /* Ensure the background image repeats */
-    background-size: auto; /* Adjust the background size as needed */
-    opacity: 0.04; /* Adjust opacity as needed */
+    background-repeat: repeat;
+    background-size: auto;
+    opacity: 0.04;
     pointer-events: none;
     z-index: 100000;
   }

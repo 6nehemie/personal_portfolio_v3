@@ -36,7 +36,7 @@ const Sidebar = () => {
       </div>
 
       <div className="space-y-10">
-        <div className="space-y-4">
+        <div className="space-y-4 text-xl">
           {en.navigation.map((link) => {
             const isActive = pathname === link.href;
 
@@ -45,7 +45,7 @@ const Sidebar = () => {
                 href={link.href}
                 key={link.label}
                 className={cn(
-                  'block text-xl text-nm-gray-500 hover:text-white transition-colors duration-200 w-max space-x-4',
+                  'block text-nm-gray-500 hover:text-white transition-colors duration-200 w-max space-x-4',
                   {
                     'text-white': isActive,
                   }
