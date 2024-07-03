@@ -67,7 +67,7 @@ const VideoContainer = ({ src }: { src: string }) => {
           loop
           playsInline
           controlsList="nodownload noremoteplayback noplaybackrate nofullscreen"
-          className="z-[5] max-xl:h-[85vh] w-full object-cover object-center"
+          className="z-[5] max-xl:h-[80vh] w-full object-cover object-center"
         >
           <source src={src} type="video/mp4" />
           Your browser does not support the video tag.
@@ -101,12 +101,12 @@ const VideoContainer = ({ src }: { src: string }) => {
             hidden: !isPlaying,
           })}
         >
-          <div className="absolute top-6 right-6 z-[20] space-x-2">
+          <div className="absolute top-4 right-4 sm:top-6 sm:right-6 z-[20] space-x-2">
             {/* //? REWIND VIDEO */}
             <Button
               onClick={handleRewindVideo}
               className={cn(
-                'size-[60px] z-[10] rounded-full bg-white bg-opacity-30 max-sm:hover:bg-opacity-30 hover:bg-white sm:hover:scale-110 backdrop-blur-sm text-nm-gray-900 text-sm transition-all duration-200',
+                'size-[50px] sm:size-[60px] z-[10] rounded-full bg-white bg-opacity-30 max-sm:hover:bg-opacity-30 hover:bg-white sm:hover:scale-110 backdrop-blur-sm text-nm-gray-900 text-sm transition-all duration-200',
                 {}
               )}
             >
@@ -117,7 +117,7 @@ const VideoContainer = ({ src }: { src: string }) => {
             <Button
               onClick={handleToggleMute}
               className={cn(
-                'size-[60px] z-[10] rounded-full bg-white bg-opacity-30 max-sm:hover:bg-opacity-30 hover:bg-white sm:hover:scale-110 backdrop-blur-sm text-nm-gray-900 text-sm transition-all duration-200',
+                'size-[50px] sm:size-[60px] z-[10] rounded-full bg-white bg-opacity-30 max-sm:hover:bg-opacity-30 hover:bg-white sm:hover:scale-110 backdrop-blur-sm text-nm-gray-900 text-sm transition-all duration-200',
                 {}
               )}
             >
