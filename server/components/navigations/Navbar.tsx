@@ -59,6 +59,7 @@ const Navbar = () => {
                 <Link
                   href={link.href}
                   key={link.label}
+                  onClick={() => setIsMenuOpen(false)}
                   className={cn(
                     'block text-3xl font-medium text-nm-gray-500 hover:text-white transition-colors duration-200 w-max space-x-4',
                     {
