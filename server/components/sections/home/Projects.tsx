@@ -12,7 +12,7 @@ const Projects = () => {
   return (
     <section className="p-side w-full space-y-[60px]">
       {/* //? PROJECT CARDS */}
-      <div className="grid grid-cols-2 xl:grid-cols-3 min-[1426px]:grid-cols-4 gap-4 w-full">
+      <div className="grid grid-cols-2 xl:grid-cols-3 min-[1426px]:grid-cols-4 gap-2.5 sm:gap-4 w-full">
         {en.projects.map((project, index) => {
           return <ProjectCard project={project} key={index} />;
         })}
