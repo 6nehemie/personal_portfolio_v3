@@ -19,7 +19,8 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="md:hidden fixed top-0 gradient-shadow pointer-events-none"></div>
+      {/* //? Shadow to be able to differentiate the text from the logo */}
+      <div className="md:hidden fixed z-[50] top-0 gradient-shadow pointer-events-none"></div>
 
       <nav
         className={cn(
