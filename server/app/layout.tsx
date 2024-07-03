@@ -41,7 +41,7 @@ export default function RootLayout({
         <Sidebar />
         <Navbar />
 
-        <div className="p-side py-10 w-full">{children}</div>
+        <div className="py-10 w-full">{children}</div>
       </body>
     </html>
   );

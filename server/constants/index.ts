@@ -9,6 +9,8 @@ export const EN = {
       firstName: 'Nehemie',
       lastName: 'Mombanga',
     },
+    videoPresentation:
+      'https://utfs.io/f/e890ada1-14a3-45b6-8ab8-699c924b2a62-p8fu89..mp4',
     title: 'Software Engineer',
     descriptions: {
       short:

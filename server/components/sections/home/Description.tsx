@@ -6,7 +6,7 @@ import { EN as en } from '@/constants';
  */
 const Description = () => {
   return (
-    <section>
+    <section className="p-side">
       <p>
         <span className="mr-[120px]">This is Nehemie a</span>
         <span className="text-3xl">{en.owner.descriptions.main}</span>
