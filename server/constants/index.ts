@@ -32,7 +32,7 @@ export const EN = {
       label: 'LinkedIn',
       href: 'https://www.linkedin.com/in/nehemie-mombanga/',
     },
-    { label: 'GitHub', href: 'https://github.com/NehemieMbg' },
+    { label: 'Github', href: 'https://github.com/NehemieMbg' },
     { label: 'Dribbble', href: 'https://dribbble.com/6nehemie' },
   ],
 
