@@ -20,15 +20,15 @@ const ProjectCard = ({ project }: { project: Project }) => {
         alt="project"
         width={290}
         height={412}
-        className="w-full aspect-auto group-hover:scale-[1.08] transition-transform duration-300"
+        className="w-full aspect-auto sm:group-hover:scale-[1.08] transition-transform duration-300"
       />
 
-      <div className="absolute top-0 right-0 left-0 bottom-0 bg-nm-gray-900 bg-opacity-0 group-hover:bg-opacity-20 transition-colors duration-300"></div>
+      <div className="absolute top-0 right-0 left-0 bottom-0 bg-nm-gray-900 bg-opacity-0 sm:group-hover:bg-opacity-20 transition-colors duration-300"></div>
 
       {/* Plus button that shows only on hover */}
       <div
         className={cn(
-          'absolute z-[10] flex items-center justify-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-12 rounded-full bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-300',
+          'absolute z-[10] flex items-center justify-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-12 rounded-full bg-white opacity-0 sm:group-hover:opacity-100 transition-opacity duration-300',
           {}
         )}
       >

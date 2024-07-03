@@ -52,6 +52,13 @@ export const EN = {
       href: '/project-4',
     },
   ],
+
+  buttons: {
+    viewAll: {
+      label: 'View all',
+      href: '/work',
+    },
+  },
 };
 
 /**
