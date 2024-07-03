@@ -8,7 +8,9 @@ const Description = () => {
   return (
     <section className="p-side">
       <p>
-        <span className="mr-[120px]">This is Nehemie a</span>
+        <span className="max-sm:block max-sm:mb-4 sm:mr-[120px]">
+          This is Nehemie a
+        </span>
         <span className="text-3xl">{en.owner.descriptions.main}</span>
       </p>
     </section>
