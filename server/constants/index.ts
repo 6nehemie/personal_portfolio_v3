@@ -158,6 +158,33 @@ export const EN = {
     },
   ],
 
+  blogs: [
+    {
+      title: 'EMERYS a decentralized exchange application',
+      href: '/1/emerys-a-decentralized-exchange-application',
+      readingTime: 3,
+      image:
+        'https://utfs.io/f/94d2c0f2-d1d7-48f9-ae50-2b821969e7bd-zh5rpi.png',
+      description: 'This is the description of the blog 1',
+    },
+    {
+      title: 'EMERYS a decentralized exchange application',
+      href: '/1/emerys-a-decentralized-exchange-application',
+      readingTime: 3,
+      image:
+        'https://utfs.io/f/94d2c0f2-d1d7-48f9-ae50-2b821969e7bd-zh5rpi.png',
+      description: 'This is the description of the blog 1',
+    },
+    {
+      title: 'EMERYS a decentralized exchange application',
+      href: '/1/emerys-a-decentralized-exchange-application',
+      readingTime: 3,
+      image:
+        'https://utfs.io/f/94d2c0f2-d1d7-48f9-ae50-2b821969e7bd-zh5rpi.png',
+      description: 'This is the description of the blog 1',
+    },
+  ],
+
   buttons: {
     viewAll: {
       label: 'View all',

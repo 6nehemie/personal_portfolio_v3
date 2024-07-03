@@ -1,3 +1,4 @@
+import Blogs from '@/components/sections/home/Blogs';
 import Description from '@/components/sections/home/Description';
 import Presentation from '@/components/sections/home/Presentation';
 import Projects from '@/components/sections/home/Projects';
@@ -17,6 +18,8 @@ export default function Home() {
       <Presentation />
 
       <Skills />
+
+      <Blogs />
     </div>
   );
 }
