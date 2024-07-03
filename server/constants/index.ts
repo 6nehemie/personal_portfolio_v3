@@ -36,20 +36,24 @@ export const EN = {
 
   projects: [
     {
-      image: '/ressources/projects/project-1.jpg',
-      href: 'https://utfs.io/f/956827fc-70c8-4407-ab35-84f40a0e0e72-esrdkz.jpg',
+      image:
+        'https://utfs.io/f/956827fc-70c8-4407-ab35-84f40a0e0e72-esrdkz.jpg',
+      href: '/project-1',
     },
     {
-      image: '/ressources/projects/project-2.jpg',
-      href: 'https://utfs.io/f/57d4f33f-6d75-4e70-8daf-76903fff96a8-esrdky.jpg',
+      image:
+        'https://utfs.io/f/57d4f33f-6d75-4e70-8daf-76903fff96a8-esrdky.jpg',
+      href: '/project-2',
     },
     {
-      image: '/ressources/projects/project-3.jpg',
-      href: 'https://utfs.io/f/9ed013e0-95a8-4d0a-ae69-8d5ede0e9bbb-esrdkx.jpg',
+      image:
+        'https://utfs.io/f/9ed013e0-95a8-4d0a-ae69-8d5ede0e9bbb-esrdkx.jpg',
+      href: '/project-3',
     },
     {
-      image: '/ressources/projects/project-4.jpg',
-      href: 'https://utfs.io/f/56583333-2efc-4d9d-937e-98ddafa2aac1-esrdkw.jpg',
+      image:
+        'https://utfs.io/f/56583333-2efc-4d9d-937e-98ddafa2aac1-esrdkw.jpg',
+      href: '/project-4',
     },
   ],
 

@@ -21,6 +21,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
         width={290}
         height={412}
         className="w-full aspect-auto sm:group-hover:scale-[1.08] transition-transform duration-300"
+        priority
       />
 
       <div className="absolute top-0 right-0 left-0 bottom-0 bg-nm-gray-900 bg-opacity-0 sm:group-hover:bg-opacity-20 transition-colors duration-300"></div>
