@@ -48,4 +48,17 @@ body {
     pointer-events: none;
     z-index: 100000;
   }
+
+  .blogs-grid {
+    display: grid;
+    grid-template-columns: minmax(0px, 234px) 334px;
+
+    @media only screen and (max-width: 554px) {
+      grid-template-columns: minmax(0px, 234px) 284px;
+    }
+
+    @media only screen and (max-width: 484px) {
+      grid-template-columns: minmax(0px, 234px) 248px;
+    }
+  }
 }
