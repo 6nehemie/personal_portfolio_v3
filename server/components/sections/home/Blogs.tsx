@@ -11,7 +11,7 @@ import Link from 'next/link';
  */
 const Blogs = () => {
   return (
-    <section className="p-side space-y-10 max-lg:space-x-5">
+    <section className="p-side space-y-10 ">
       <div className="flex justify-between items-end">
         <h2 className="text-2xl max-lg:flex flex-col">
           <span>Expert Insights</span> <span>& Latest Innovations</span>
