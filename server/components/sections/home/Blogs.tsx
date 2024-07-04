@@ -11,10 +11,10 @@ import Link from 'next/link';
  */
 const Blogs = () => {
   return (
-    <section className="p-side space-y-10">
+    <section className="p-side space-y-10 max-lg:space-x-5">
       <div className="flex justify-between items-end">
-        <h2 className="text-2xl max-lg:w-[320px]">
-          Expert Insights & Latest Innovations
+        <h2 className="text-2xl max-lg:flex flex-col">
+          <span>Expert Insights</span> <span>& Latest Innovations</span>
         </h2>
 
         <ButtonArrowUpRight label="View All" href="/blogs" />
@@ -34,11 +34,11 @@ const Blogs = () => {
                   alt={blog.title}
                   width={1091}
                   height={691}
-                  className="sm:group-hover:scale-105 transition-transform duration-300 ease-in-out"
+                  className="sm:group-hover:scale-105 transition-transform duration-300 ease-in-out object-cover"
                 />
               </div>
 
-              <div className="sm:absolute bottom-0 flex flex-col justify-between sm:h-[168px] sm:group-hover:h-[180px] transition-size duration-300 p-5 bg-nm-gray-700">
+              <div className="sm:absolute bottom-0 left-0 right-0 flex flex-col justify-between sm:h-[168px] sm:group-hover:h-[180px] transition-size duration-300 p-5 bg-nm-gray-700">
                 <h3 className="text-md xl:text-lg 2xl:text-xl font-medium">
                   {blog.title}
                 </h3>
@@ -54,7 +54,7 @@ const Blogs = () => {
                 )}
               </div>
 
-              <div className="h-[168px] w-full bg-nm-gray-700 max-sm:hidden"></div>
+              <div className="h-[168px] bg-nm-gray-700 max-sm:hidden"></div>
             </Link>
           );
         })}

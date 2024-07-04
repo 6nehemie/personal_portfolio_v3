@@ -30,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={cn('main-grid', {
+        className={cn('main-grid overflow-x-hidden', {
           [raleway.className]: raleway.className,
         })}
       >
@@ -41,7 +41,7 @@ export default function RootLayout({
         <Sidebar />
         <Navbar />
 
-        <div className="py-10 w-full">{children}</div>
+        <div className="py-10 w-full ">{children}</div>
       </body>
     </html>
   );
