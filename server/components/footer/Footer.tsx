@@ -13,7 +13,7 @@ const Footer = () => {
 
   return (
     <footer className="p-side">
-      <div className=" sm:hidden h-[40vh] flex flex-col gap-4 justify-center items-center">
+      <div className=" sm:hidden flex flex-col gap-4 justify-center items-center">
         {/* <Link href={'/'} className={cn('w-max mb-20', {})}>
           <Image
             src="/logo-2.png"
@@ -62,7 +62,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex max-sm:gap-2 sm:justify-between items-end h-max text-sm text-nm-gray-500">
+      <div className="flex max-sm:gap-2 max-sm:pt-10 sm:justify-between items-end h-max text-sm text-nm-gray-500">
         <div className="text-sm space-y-1 max-sm:mx-auto">
           <div className="text-sm">All rights reserved {year} © 6nehemie</div>
         </div>
