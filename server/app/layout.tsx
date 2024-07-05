@@ -5,6 +5,7 @@ import Sidebar from '@/components/navigations/Sidebar';
 import { cn } from '@/lib/utils';
 import Navbar from '@/components/navigations/Navbar';
 import Image from 'next/image';
+import Footer from '@/components/footer/Footer';
 
 const raleway = Raleway({ subsets: ['latin'] });
 
@@ -28,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body
         className={cn('main-grid overflow-x-hidden', {
           [raleway.className]: raleway.className,
@@ -41,7 +42,11 @@ export default function RootLayout({
         <Sidebar />
         <Navbar />
 
-        <div className="py-10 w-full ">{children}</div>
+        <div className="py-10 w-full space-y-[160px]">
+          {children}
+
+          <Footer />
+        </div>
       </body>
     </html>
   );

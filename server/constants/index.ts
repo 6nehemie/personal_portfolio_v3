@@ -1,3 +1,5 @@
+import { link } from 'fs';
+
 /**
  * This file contains all the constants used in the application in english version.
  */
@@ -190,6 +192,25 @@ export const EN = {
       label: 'View all',
       href: '/work',
     },
+  },
+
+  footer: {
+    contact: ['nehemie.mbg@gmail.com', '+33 7 69 35 74 53'],
+    pages: [
+      { label: 'Home', href: '/' },
+      { label: 'Work', href: '/work' },
+      { label: 'About', href: '/about' },
+      { label: 'Blogs', href: '/blogs' },
+      { label: 'Contact', href: '/contact' },
+    ],
+    links: [
+      {
+        label: 'LinkedIn',
+        href: 'https://www.linkedin.com/in/nehemie-mombanga/',
+      },
+      { label: 'Github', href: 'https://github.com/NehemieMbg' },
+      { label: 'Dribbble', href: 'https://dribbble.com/6nehemie' },
+    ],
   },
 };
 
