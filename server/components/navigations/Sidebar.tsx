@@ -16,7 +16,7 @@ const Sidebar = () => {
   const pathname = usePathname();
 
   return (
-    <nav className="sticky top-0 max-md:hidden flex flex-col justify-between w-[420px] h-screen p-side py-10">
+    <nav className="sticky top-0 max-md:hidden flex flex-col justify-between md:w-[240px] lg:w-[320px] xl:w-[380px] 2xl:w-[420px] h-screen p-side py-10">
       <div className="space-y-10 text-sm">
         <div className="w-max">
           <Logo />
