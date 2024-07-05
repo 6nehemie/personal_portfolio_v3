@@ -7,6 +7,8 @@ import { cn } from '@/lib/utils';
  * This component displays a button with an arrow pointing up and right.
  * @label The label of the button.
  * @href The href of the button.
+ * @className The class name of the button.
+ * @target The target of the button.
  * @returns The ButtonArrowUpRight component.
  */
 const ButtonArrowUpRight = ({
@@ -14,11 +16,13 @@ const ButtonArrowUpRight = ({
   href,
   className,
   target,
+  iconStyle,
 }: {
   label: string;
   href: string;
   className?: string;
   target?: '_blank' | '_self' | '_parent' | '_top';
+  iconStyle?: string;
 }) => {
   return (
     <Button asChild className="bg-inherit hover:bg-inherit p-0">
@@ -41,7 +45,11 @@ const ButtonArrowUpRight = ({
           <span>{label}</span>
         </div>
 
-        <ArrowUpRight size={16} className="inline" />
+        <ArrowUpRight
+          className={cn('inline size-4', {
+            [`${iconStyle}`]: iconStyle,
+          })}
+        />
       </Link>
     </Button>
   );
