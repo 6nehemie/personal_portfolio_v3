@@ -35,8 +35,6 @@ export default function RootLayout({
           [raleway.className]: raleway.className,
         })}
       >
-        {/* Bruit */}
-
         <div className="fixed z-[1000000] top-0 bottom-0 right-0 left-0 overlay pointer-events-none"></div>
 
         <Sidebar />

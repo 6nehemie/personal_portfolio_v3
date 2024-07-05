@@ -1,5 +1,3 @@
-import { link } from 'fs';
-
 /**
  * This file contains all the constants used in the application in english version.
  */

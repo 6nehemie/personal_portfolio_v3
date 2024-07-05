@@ -13,15 +13,18 @@ const ButtonArrowUpRight = ({
   label,
   href,
   className,
+  target,
 }: {
   label: string;
   href: string;
   className?: string;
+  target?: '_blank' | '_self' | '_parent' | '_top';
 }) => {
   return (
     <Button asChild className="bg-inherit hover:bg-inherit p-0">
       <Link
         href={href}
+        target={target}
         className={cn('relative flex gap-2 group overflow-hidden text-sm h-5', {
           [`${className}`]: className,
         })}

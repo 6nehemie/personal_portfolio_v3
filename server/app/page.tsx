@@ -1,4 +1,3 @@
-import Footer from '@/components/footer/Footer';
 import Blogs from '@/components/sections/home/Blogs';
 import Description from '@/components/sections/home/Description';
 import Presentation from '@/components/sections/home/Presentation';
@@ -21,8 +20,6 @@ export default function Home() {
       <Skills />
 
       <Blogs />
-
-      {/* <Footer /> */}
     </div>
   );
 }

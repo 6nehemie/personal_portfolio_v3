@@ -6,6 +6,7 @@ import { EN as en } from '@/constants';
 import { cn } from '@/lib/utils';
 import { usePathname } from 'next/navigation';
 import { ArrowUpRight } from 'lucide-react';
+import ButtonArrowUpRight from '../buttons/ButtonArrowUpRight';
 
 /**
  * Sidebar component
@@ -59,18 +60,14 @@ const Sidebar = () => {
 
         <div className="relative text-sm space-y-2.5">
           {en.externalLinks.map((link) => (
-            <Link
-              key={link.label}
-              href={link.href}
-              target="_blank"
-              className={cn(
-                'block w-max text-nm-gray-500 hover:text-white transition-colors duration-200',
-                {}
-              )}
-            >
-              <span>{link.label}</span>
-              <ArrowUpRight size={16} className="inline-block ml-1" />
-            </Link>
+            <div key={link.label}>
+              <ButtonArrowUpRight
+                href={link.href}
+                target="_blank"
+                label={link.label}
+                className="block w-max text-nm-gray-500 hover:text-white transition-colors duration-200"
+              />
+            </div>
           ))}
         </div>
       </div>
