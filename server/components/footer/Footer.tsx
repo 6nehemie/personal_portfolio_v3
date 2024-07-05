@@ -13,8 +13,8 @@ const Footer = () => {
 
   return (
     <footer className="p-side">
-      <div className=" sm:hidden h-[90vh] flex flex-col gap-4 justify-center items-center">
-        <Link href={'/'} className={cn('w-max mb-20', {})}>
+      <div className=" sm:hidden h-[40vh] flex flex-col gap-4 justify-center items-center">
+        {/* <Link href={'/'} className={cn('w-max mb-20', {})}>
           <Image
             src="/logo-2.png"
             alt="Logo"
@@ -22,7 +22,7 @@ const Footer = () => {
             height={60}
             className={cn('h-40 w-auto', {})}
           />
-        </Link>
+        </Link> */}
 
         <ButtonArrowUpRight
           label="Let's Get In Touch"
