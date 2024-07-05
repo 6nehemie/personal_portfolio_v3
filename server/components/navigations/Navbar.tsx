@@ -29,7 +29,7 @@ const Navbar = () => {
         )}
       >
         <div className="px-[15px]">
-          <Logo className="" />
+          <Logo />
         </div>
 
         <div
