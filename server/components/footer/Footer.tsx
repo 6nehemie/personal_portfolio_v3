@@ -13,14 +13,14 @@ const Footer = () => {
 
   return (
     <footer className="p-side">
-      <div className=" sm:hidden h-[50vh] flex flex-col gap-4 justify-center items-center">
+      <div className=" sm:hidden h-[80vh] flex flex-col gap-4 justify-center items-center">
         <Link href={'/'} className={cn('w-max mb-20', {})}>
           <Image
-            src="/logo.png"
+            src="/logo-2.png"
             alt="Logo"
             width={32}
             height={60}
-            className={cn('h-20 w-auto', {})}
+            className={cn('h-40 w-auto', {})}
           />
         </Link>
 
