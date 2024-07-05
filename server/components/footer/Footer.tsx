@@ -57,7 +57,7 @@ const Footer = () => {
             target="_blank"
             className={cn('inline-block', {})}
           >
-            LinkedIn
+            Dribbble
           </Link>
         </div>
       </div>
