@@ -235,13 +235,5 @@ export const about = {
       size: 1102214,
       uploadedAt: '2024-07-06T10:56:17.000Z',
     },
-    {
-      name: '66826183_2394284137525739_6277664873765644888_n (1) 1.png',
-      key: '969fe017-8c87-4998-9fcb-30987816e2ac-xwnfxw.png',
-      customId: null,
-      url: 'https://utfs.io/f/a326aa66-dd4e-4ecc-92d9-4247013e7495-ore8iq.png',
-      size: 1387500,
-      uploadedAt: '2024-07-06T10:56:17.000Z',
-    },
   ],
 };

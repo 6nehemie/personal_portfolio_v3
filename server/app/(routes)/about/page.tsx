@@ -1,8 +1,10 @@
 import Description from '@/components/sections/home/Description';
 import Presentation from '@/components/sections/home/Presentation';
+import Skills from '@/components/sections/home/Skills';
 import PageHeader from '@/components/sections/reutilisable/PageHeader';
 import Separator from '@/components/sections/reutilisable/Separator';
 import { about } from '@/constants';
+import { cn } from '@/lib/utils';
 import Image from 'next/image';
 
 /**
@@ -35,18 +37,22 @@ const About = () => {
           {/* <Separator /> */}
         </div>
 
-        <div className="relative flex gap-5 overflow-hidden overflow-x-scroll ">
+        <div className="xl:p-side relative lg:grid grid-cols-2 gap-2.5">
           {about.images.map((image, index) => (
             <Image
               key={index}
               src={image.url!}
               alt={image.name}
-              className="h-[70vh] w-auto"
+              className={cn('w-auto object-contain', {
+                'max-lg:hidden': index === 1,
+              })}
               width={1153}
               height={1440}
             />
           ))}
         </div>
+
+        <Skills />
       </div>
     </div>
   );
