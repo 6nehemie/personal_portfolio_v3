@@ -32,7 +32,7 @@ const About = () => {
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
 
-          <Separator />
+          {/* <Separator /> */}
         </div>
 
         <div className="relative flex gap-5 overflow-hidden overflow-x-scroll ">
