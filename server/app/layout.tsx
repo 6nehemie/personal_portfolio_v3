@@ -40,7 +40,7 @@ export default function RootLayout({
         <Sidebar />
         <Navbar />
 
-        <div className="py-10 w-full space-y-[160px]">
+        <div className="section-grid py-10 w-full space-y-[160px]">
           {children}
 
           <Footer />

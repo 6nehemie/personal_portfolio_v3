@@ -7,6 +7,8 @@ body {
 }
 
 @layer base {
+  /* //! GRID LAYOUT */
+
   /*? set up the main layout of the page */
   .main-grid {
     display: grid;
@@ -17,10 +19,32 @@ body {
     }
   }
 
+  .section-grid {
+    display: grid;
+    grid-template-rows: 1fr max-content;
+  }
+
+  .blogs-grid {
+    display: grid;
+    grid-template-columns: minmax(0px, 234px) 334px;
+
+    @media only screen and (max-width: 554px) {
+      grid-template-columns: minmax(0px, 234px) 284px;
+    }
+
+    @media only screen and (max-width: 484px) {
+      grid-template-columns: minmax(0px, 234px) 248px;
+    }
+  }
+
+  /* //! PADDING */
+
   /*? Add padding to the page */
   .p-side {
     @apply px-7 md:px-10 2xl:px-[60px];
   }
+
+  /* //! OVERLAY & BACKDROP */
 
   /*? Add a gradient shadow to the bottom of the page */
   .gradient-shadow {
@@ -47,18 +71,5 @@ body {
     opacity: 0.04;
     pointer-events: none;
     z-index: 100000;
-  }
-
-  .blogs-grid {
-    display: grid;
-    grid-template-columns: minmax(0px, 234px) 334px;
-
-    @media only screen and (max-width: 554px) {
-      grid-template-columns: minmax(0px, 234px) 284px;
-    }
-
-    @media only screen and (max-width: 484px) {
-      grid-template-columns: minmax(0px, 234px) 248px;
-    }
   }
 }
