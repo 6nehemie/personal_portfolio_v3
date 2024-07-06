@@ -216,3 +216,32 @@ export const EN = {
  * This file contains all the constants used in the application in french version.
  */
 const FR = {};
+
+export const about = {
+  images: [
+    {
+      name: '365471111_1328588824676073_6012414451872816155_n 1.png',
+      key: 'a326aa66-dd4e-4ecc-92d9-4247013e7495-ore8iq.png',
+      customId: null,
+      url: 'https://utfs.io/f/969fe017-8c87-4998-9fcb-30987816e2ac-xwnfxw.png',
+      size: 2457126,
+      uploadedAt: '2024-07-06T10:56:17.000Z',
+    },
+    {
+      name: '66615850_170697767310850_8221698425073415733_n 1.png',
+      key: 'ea2a4284-999a-4404-8fbb-ae6027a6ae26-ec0nyy.png',
+      customId: null,
+      url: 'https://uploadthing-prod.s3.us-west-2.amazonaws.com/ea2a4284-999a-4404-8fbb-ae6027a6ae26-ec0nyy.png',
+      size: 1102214,
+      uploadedAt: '2024-07-06T10:56:17.000Z',
+    },
+    {
+      name: '66826183_2394284137525739_6277664873765644888_n (1) 1.png',
+      key: '969fe017-8c87-4998-9fcb-30987816e2ac-xwnfxw.png',
+      customId: null,
+      url: 'https://utfs.io/f/a326aa66-dd4e-4ecc-92d9-4247013e7495-ore8iq.png',
+      size: 1387500,
+      uploadedAt: '2024-07-06T10:56:17.000Z',
+    },
+  ],
+};
