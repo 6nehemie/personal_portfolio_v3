@@ -20,7 +20,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
         alt="project"
         width={290}
         height={412}
-        className="w-full aspect-auto sm:group-hover:scale-[1.08] transition-transform duration-300"
+        className="w-full aspect-auto sm:group-hover:scale-[1.04] transition-transform duration-300"
         priority
       />
 

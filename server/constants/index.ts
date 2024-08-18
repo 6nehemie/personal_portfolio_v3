@@ -142,7 +142,7 @@ export const EN = {
   projects: [
     {
       image:
-        'https://utfs.io/f/956827fc-70c8-4407-ab35-84f40a0e0e72-esrdkz.jpg',
+        'https://utfs.io/f/ca84b6b8-645d-47ad-9cc7-b755edc37282-loe2ng.png',
       href: '/project-1',
     },
     {
