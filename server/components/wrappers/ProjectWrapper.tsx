@@ -37,16 +37,16 @@ const ProjectWrapper = ({
       <div className="flex gap-14 w-full mx-auto max-xl:p-side">
         <div className="space-y-5 max-xl:space-y-8">
           <div className="space-y-2">
-            <div className="flex justify-between">
+            <div className="flex justify-between items-center">
               <h1 className="text-2xl font-medium">{title}</h1>
 
-              {/* {liveUrl && (
+              {liveUrl && (
                 <Button asChild className="bg-inherit hover:bg-inherit p-0">
                   <Link
                     href={liveUrl}
                     target="_blank"
                     className={cn(
-                      'relative flex gap-2 group overflow-hidden text-sm h-5'
+                      'relative flex gap-2 group overflow-hidden text-base xl:text-lg h-5'
                     )}
                   >
                     <div className="invisible">
@@ -62,7 +62,7 @@ const ProjectWrapper = ({
                     </div>
                   </Link>
                 </Button>
-              )} */}
+              )}
             </div>
 
             <div className="space-x-5">
@@ -86,7 +86,7 @@ const ProjectWrapper = ({
                 />
               )}
 
-              {liveUrl && (
+              {/* {liveUrl && (
                 <ButtonArrowUpRight
                   href={liveUrl}
                   target="_blank"
@@ -94,7 +94,7 @@ const ProjectWrapper = ({
                   // iconStyle='hidden'
                   className="block w-max text-nm-gray-200 hover:text-white transition-colors duration-200"
                 />
-              )}
+              )} */}
             </div>
           </div>
 
