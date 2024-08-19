@@ -16,6 +16,7 @@ import { useState } from 'react';
 const Navbar = () => {
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const isProjectPreview = pathname.includes('/work/');
 
   return (
     <>
@@ -24,8 +25,11 @@ const Navbar = () => {
 
       <nav
         className={cn(
-          'sticky z-[100] top-0 md:hidden h-[80px] px-[15px] w-screen flex justify-between items-center',
-          {}
+          'z-[100] top-0 md:hidden h-[80px] px-[15px] w-screen flex justify-between items-center',
+          {
+            fixed: isProjectPreview,
+            sticky: !isProjectPreview,
+          }
         )}
       >
         <div className="px-[15px]">
