@@ -8,12 +8,15 @@ import Link from 'next/link';
  * Display all the projects cards.
  * @returns The Projects section component.
  */
-const Projects = () => {
+const Projects = ({ count }: { count?: number }) => {
+  const projectCount = count || en.projects.length;
+  const projects = en.projects.slice(0, projectCount);
+
   return (
     <section className="p-side w-full space-y-[60px]">
       {/* //? PROJECT CARDS */}
       <div className="grid grid-cols-2 xl:grid-cols-3 min-[1426px]:grid-cols-4 gap-2.5 sm:gap-4 w-full">
-        {en.projects.map((project, index) => {
+        {projects.map((project, index) => {
           return <ProjectCard project={project} key={index} />;
         })}
       </div>

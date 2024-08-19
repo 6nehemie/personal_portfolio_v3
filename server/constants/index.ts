@@ -160,7 +160,12 @@ export const EN = {
     },
     {
       image:
-        'https://utfs.io/f/56583333-2efc-4d9d-937e-98ddafa2aac1-esrdkw.jpg',
+        'https://utfs.io/f/561886eb-1834-49c0-9cfd-8a1124b95262-ok07f4.png',
+      href: '/project-5',
+    },
+    {
+      image:
+        'https://utfs.io/f/6b044862-089e-49b7-92e8-949af07cf8c0-60veh2.png',
       href: '/project-4',
     },
   ],

@@ -13,7 +13,7 @@ export default function Home() {
     <div className="relative w-full space-y-[160px] py-10">
       <Description />
 
-      <Projects />
+      <Projects count={4} />
 
       <Presentation />
 
