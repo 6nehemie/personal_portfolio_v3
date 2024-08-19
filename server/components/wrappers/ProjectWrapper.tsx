@@ -31,7 +31,7 @@ const ProjectWrapper = ({
         width={1728}
         height={1117}
         priority
-        className="w-full max-xl:h-[35%] object-cover xl:rounded-md overflow-hidden"
+        className="w-full max-[537px]:h-[34%] object-cover xl:rounded-md overflow-hidden"
       />
 
       <div className="flex gap-14 w-full mx-auto max-xl:p-side">
