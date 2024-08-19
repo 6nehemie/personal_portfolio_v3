@@ -7,7 +7,7 @@ import PageHeader from '@/components/sections/reutilisable/PageHeader';
  */
 const Work = () => {
   return (
-    <div className="p-side space-y-[160px]">
+    <div className="p-side space-y-[160px] py-10">
       <div className="space-y-20">
         <PageHeader
           title="Work"

@@ -11,7 +11,7 @@ import Link from 'next/link';
  */
 const Blogs = () => {
   return (
-    <div className="p-side space-y-20 ">
+    <div className="p-side space-y-20 py-10">
       <PageHeader
         title="Blogs"
         text="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas

@@ -141,18 +141,21 @@ export const EN = {
 
   projects: [
     {
+      title: 'Aixela',
       image:
         'https://utfs.io/f/ca84b6b8-645d-47ad-9cc7-b755edc37282-loe2ng.png',
-      href: '/project-1',
+      thumbnail:
+        'https://utfs.io/f/ee6011e2-4de4-4598-98ba-bac80fed1a12-wg2rwb.jpg',
+      href: '/work/aixela',
     },
     {
       image:
-        'https://utfs.io/f/57d4f33f-6d75-4e70-8daf-76903fff96a8-esrdky.jpg',
+        'https://utfs.io/f/b85d39bc-74c0-4d79-9b2c-601e99109706-1kyf6l.png',
       href: '/project-2',
     },
     {
       image:
-        'https://utfs.io/f/9ed013e0-95a8-4d0a-ae69-8d5ede0e9bbb-esrdkx.jpg',
+        'https://utfs.io/f/7d5b5593-bab8-4171-862e-9a6038f027b1-kz5e2z.png',
       href: '/project-3',
     },
     {

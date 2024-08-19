@@ -12,7 +12,7 @@ const Footer = () => {
   const year = date.getFullYear();
 
   return (
-    <footer className="p-side">
+    <footer className="p-side py-10">
       <div className=" sm:hidden flex flex-col gap-4 justify-center items-center">
         {/* <Link href={'/'} className={cn('w-max mb-20', {})}>
           <Image

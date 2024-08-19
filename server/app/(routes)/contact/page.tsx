@@ -3,6 +3,6 @@
  * @returns The Contact page component.
  */
 const Contact = () => {
-  return <div>Contact</div>;
+  return <div className="py-10">Contact</div>;
 };
 export default Contact;

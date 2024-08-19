@@ -10,7 +10,7 @@ import Skills from '@/components/sections/home/Skills';
  */
 export default function Home() {
   return (
-    <div className="relative w-full space-y-[160px]">
+    <div className="relative w-full space-y-[160px] py-10">
       <Description />
 
       <Projects />

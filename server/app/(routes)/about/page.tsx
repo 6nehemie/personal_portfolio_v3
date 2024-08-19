@@ -13,7 +13,7 @@ import Image from 'next/image';
  */
 const About = () => {
   return (
-    <div className="">
+    <div className="py-10">
       <div className="p-side">
         <PageHeader title="About" />
       </div>
