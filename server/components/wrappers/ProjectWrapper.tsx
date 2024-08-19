@@ -1,11 +1,30 @@
-import Image from 'next/image';
-import ButtonArrowUpRight from '../buttons/ButtonArrowUpRight';
-import Link from 'next/link';
-import { Button } from '../ui/button';
 import { cn } from '@/lib/utils';
-import { ReactNode } from 'react';
 import StackIcon from '@/utils/stackIcons/StackIcon';
+import Image from 'next/image';
+import Link from 'next/link';
+import { ReactNode } from 'react';
+import ButtonArrowUpRight from '../buttons/ButtonArrowUpRight';
+import ContributorCard from '../cards/ContributorCard';
+import { Button } from '../ui/button';
 
+interface Contributors {
+  imageUrl: string;
+  fullName: string;
+  linkedInUrl: string;
+}
+
+/**
+ * Display a project wrapper with the project image, title, description, stack, and team members
+ * @imageUrl - the image of the project
+ * @title - the title of the project
+ * @children - the description of the project
+ * @githubUrl - the github url of the project
+ * @figmaUrl - the figma url of the project
+ * @liveUrl - the live url of the project
+ * @stack - the stack of the project
+ * @contributors - the team members of the project
+ * @returns The project wrapper component.
+ */
 const ProjectWrapper = ({
   imageUrl,
   title,
@@ -14,6 +33,7 @@ const ProjectWrapper = ({
   figmaUrl,
   liveUrl,
   stack,
+  contributors,
 }: {
   imageUrl: string;
   title: string;
@@ -22,6 +42,7 @@ const ProjectWrapper = ({
   figmaUrl?: string;
   liveUrl?: string;
   stack?: string[];
+  contributors?: Contributors[];
 }) => {
   return (
     <div className="xl:p-side xl:pt-10 pb-10 space-y-10">
@@ -119,24 +140,44 @@ const ProjectWrapper = ({
           <div className="text-nm-gray-200">{children}</div>
         </div>
 
-        <div className="max-xl:hidden max-w-[348px] w-full text-sm space-y-3">
-          <h3 className="text-lg font-medium">Stack</h3>
-          <div className="flex flex-auto flex-wrap gap-2.5">
-            {stack?.map((stackItem) => {
-              const stackIcon: ReactNode = StackIcon(stackItem);
+        <div className="max-xl:hidden max-w-[348px] w-full text-sm space-y-10">
+          <div className="space-y-5">
+            <h3 className="text-lg text-nm-gray-200 mt-0.5">Stack</h3>
 
-              return (
-                <div
-                  key={stackItem}
-                  className="flex items-center gap-1.5 py-1 px-2 rounded-md bg-nm-gray-700"
-                >
-                  {stackIcon}
-                  <span className="text-nm-gray-200 whitespace-nowrap font-medium">
-                    {stackItem}
-                  </span>
-                </div>
-              );
-            })}
+            <div className="flex flex-auto flex-wrap gap-2.5">
+              {stack?.map((stackItem) => {
+                const stackIcon: ReactNode = StackIcon(stackItem);
+
+                return (
+                  <div
+                    key={stackItem}
+                    className="flex items-center gap-1.5 py-1 px-2 rounded-md bg-nm-gray-700"
+                  >
+                    {stackIcon}
+                    <span className="text-nm-gray-200 whitespace-nowrap font-medium">
+                      {stackItem}
+                    </span>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+
+          <div className="space-y-5">
+            <h3 className="text-lg text-nm-gray-200">Team</h3>
+
+            <div className="space-y-5">
+              {contributors?.map((contributor) => {
+                return (
+                  <ContributorCard
+                    key={contributor.fullName}
+                    imageUrl={contributor.imageUrl}
+                    fullName={contributor.fullName}
+                    linkedInUrl={contributor.linkedInUrl}
+                  />
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>
