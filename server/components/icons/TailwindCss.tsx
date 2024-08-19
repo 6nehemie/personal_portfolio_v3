@@ -18,7 +18,7 @@ const TailwindCss = ({
       className={cn('', className)}
     >
       <g
-        fill="#ffffff"
+        fill="gray"
         fill-rule="nonzero"
         stroke="none"
         stroke-width="1"

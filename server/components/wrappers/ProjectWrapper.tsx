@@ -35,10 +35,10 @@ const ProjectWrapper = ({
       />
 
       <div className="flex gap-14 w-full mx-auto max-xl:p-side">
-        <div className="space-y-10">
-          <div className="space-y-2.5">
+        <div className="space-y-5 max-xl:space-y-8">
+          <div className="space-y-2">
             <div className="flex justify-between">
-              <h1 className="text-3xl font-medium">{title}</h1>
+              <h1 className="text-2xl font-medium">{title}</h1>
 
               {/* {liveUrl && (
                 <Button asChild className="bg-inherit hover:bg-inherit p-0">
@@ -98,19 +98,40 @@ const ProjectWrapper = ({
             </div>
           </div>
 
+          <div className="flex flex-auto flex-wrap gap-2.5 text-sm xl:hidden">
+            {stack?.map((stackItem) => {
+              const stackIcon: ReactNode = StackIcon(stackItem);
+
+              return (
+                <div
+                  key={stackItem}
+                  className="flex items-center gap-1.5 py-1 px-2 rounded-md bg-nm-gray-700"
+                >
+                  {stackIcon}
+                  <span className="text-nm-gray-200 whitespace-nowrap font-medium">
+                    {stackItem}
+                  </span>
+                </div>
+              );
+            })}
+          </div>
+
           <div className="text-nm-gray-200">{children}</div>
         </div>
 
-        <div className="max-w-[348px] w-full text-sm space-y-5">
-          <h3 className="text-sm font-medium">Stack</h3>
+        <div className="max-xl:hidden max-w-[348px] w-full text-sm space-y-3">
+          <h3 className="text-lg font-medium">Stack</h3>
           <div className="flex flex-auto flex-wrap gap-2.5">
             {stack?.map((stackItem) => {
               const stackIcon: ReactNode = StackIcon(stackItem);
 
               return (
-                <div key={stackItem} className="flex items-center gap-2">
+                <div
+                  key={stackItem}
+                  className="flex items-center gap-1.5 py-1 px-2 rounded-md bg-nm-gray-700"
+                >
                   {stackIcon}
-                  <span className="fill-white whitespace-nowrap">
+                  <span className="text-nm-gray-200 whitespace-nowrap font-medium">
                     {stackItem}
                   </span>
                 </div>

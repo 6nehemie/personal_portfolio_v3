@@ -15,7 +15,7 @@ const Vercel = ({
       height={size}
       className={cn('', className)}
     >
-      <path fill-rule="evenodd" d="M256,48,496,464H16Z" />
+      <path fill="gray" fill-rule="evenodd" d="M256,48,496,464H16Z" />
     </svg>
   );
 };

@@ -1,5 +1,6 @@
 import React, { ReactNode } from 'react';
 import {
+  AWS,
   Figma,
   Nest,
   Next,
@@ -22,6 +23,7 @@ const stack = [
   'Shadcn',
   'OAuth',
   'Stripe',
+  'AWS',
   'Vercel',
 ];
 
@@ -31,19 +33,21 @@ const stack = [
  * @returns The icon component
  */
 const StackIcon = (stack: string): React.ReactNode => {
-  const className = 'fill-white text-white size-8 w-8 h-8';
+  const className = 'size-4';
+  const iconSize = 18;
 
   const stackIcons: Record<string, ReactNode> = {
-    figma: <Figma className={className} size={20} />,
-    nextjs: <Next className={className} size={20} />,
-    nestjs: <Nest className={className} size={20} />,
-    zod: <Zod className={className} size={20} />,
-    reduxtoolkit: <Redux className={className} size={20} />,
-    tailwindcss: <TailwindCss className={className} size={20} />,
-    shadcn: <Shadcn className={className} size={20} />,
-    oauth: <OAuth className={className} size={20} />,
-    stripe: <Stripe className={className} size={20} />,
-    vercel: <Vercel className={className} size={20} />,
+    figma: <Figma className={className} size={iconSize} />,
+    nextjs: <Next className={className} size={iconSize} />,
+    nestjs: <Nest className={className} size={iconSize} />,
+    zod: <Zod className={className} size={iconSize} />,
+    reduxtoolkit: <Redux className={className} size={iconSize} />,
+    tailwindcss: <TailwindCss className={className} size={iconSize} />,
+    shadcn: <Shadcn className={className} size={iconSize} />,
+    oauth: <OAuth className={className} size={iconSize} />,
+    stripe: <Stripe className={className} size={iconSize} />,
+    vercel: <Vercel className={className} size={iconSize} />,
+    aws: <AWS className={className} size={iconSize} />,
   };
 
   const sanitizedStack = stack.toLowerCase().replace(/[.\s]/g, ''); // Remove dots and spaces

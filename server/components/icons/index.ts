@@ -8,3 +8,4 @@ export { default as Shadcn } from './Shadcn';
 export { default as OAuth } from './OAuth';
 export { default as Stripe } from './Stripe';
 export { default as Vercel } from './Vercel';
+export { default as AWS } from './AWS';

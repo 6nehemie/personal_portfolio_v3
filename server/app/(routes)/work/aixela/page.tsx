@@ -10,13 +10,14 @@ const stack = [
   'Shadcn',
   'OAuth',
   'Stripe',
+  'aws',
   'Vercel',
 ];
 
 const Aixela = () => {
   return (
     <ProjectWrapper
-      imageUrl="https://utfs.io/f/e1a6dac8-430e-4d7a-a202-6d89856b3637-29hg5u.png"
+      imageUrl="https://utfs.io/f/cc7e3281-5168-49b2-97e0-fd153878a78a-34dhop.png"
       title="Aixela"
       stack={stack}
       liveUrl="https://aixela.vercel.app/"
