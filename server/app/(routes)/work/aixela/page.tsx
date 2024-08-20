@@ -33,6 +33,7 @@ const Aixela = () => {
       imageUrl="https://utfs.io/f/cc7e3281-5168-49b2-97e0-fd153878a78a-34dhop.png"
       title="Aixela"
       stack={stack}
+      creationDate="July 23, 2024"
       contributors={contributors}
       liveUrl="https://aixela.vercel.app/"
       githubUrl="https://github.com/NehemieMbg/aixela"
