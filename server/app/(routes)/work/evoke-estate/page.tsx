@@ -2,15 +2,15 @@ import ProjectWrapper from '@/components/wrappers/ProjectWrapper';
 
 const stack = [
   'Figma',
+  'Java',
+  'TypeScript',
+  'Spring Boot',
+  'Railway',
   'Next.js',
-  'Nest.js',
   'Zod',
-  'Redux Toolkit',
-  'TailwindCSS',
-  'Shadcn',
-  'OAuth',
-  'Stripe',
   'aws',
+  'Shadcn',
+  'TailwindCSS',
   'Vercel',
 ];
 

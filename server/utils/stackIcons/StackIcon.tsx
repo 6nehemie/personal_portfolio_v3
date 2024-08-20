@@ -2,13 +2,19 @@ import React, { ReactNode } from 'react';
 import {
   AWS,
   Figma,
+  Java,
   Nest,
   Next,
   OAuth,
+  OpenAi,
   Redux,
+  Resend,
   Shadcn,
+  SpringBoot,
   Stripe,
   TailwindCss,
+  TypeScript,
+  Upstash,
   Vercel,
   Zod,
 } from '@/components/icons';
@@ -37,6 +43,8 @@ const StackIcon = (stack: string): React.ReactNode => {
   const iconSize = 18;
 
   const stackIcons: Record<string, ReactNode> = {
+    java: <Java className={className} size={iconSize} />,
+    typescript: <TypeScript className={className} size={iconSize} />,
     figma: <Figma className={className} size={iconSize} />,
     nextjs: <Next className={className} size={iconSize} />,
     nestjs: <Nest className={className} size={iconSize} />,
@@ -48,6 +56,10 @@ const StackIcon = (stack: string): React.ReactNode => {
     stripe: <Stripe className={className} size={iconSize} />,
     vercel: <Vercel className={className} size={iconSize} />,
     aws: <AWS className={className} size={iconSize} />,
+    resend: <Resend className={className} size={iconSize} />,
+    springboot: <SpringBoot className={className} size={iconSize} />,
+    openai: <OpenAi className={className} size={iconSize} />,
+    upstach: null,
   };
 
   const sanitizedStack = stack.toLowerCase().replace(/[.\s]/g, ''); // Remove dots and spaces

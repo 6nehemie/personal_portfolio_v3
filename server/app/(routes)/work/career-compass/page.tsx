@@ -2,16 +2,21 @@ import ProjectWrapper from '@/components/wrappers/ProjectWrapper';
 
 const stack = [
   'Figma',
+  'Java',
+  'TypeScript',
+  'Spring Boot',
+  'Resend',
+  'Open Ai',
+  'Railway',
   'Next.js',
-  'Nest.js',
   'Zod',
-  'Redux Toolkit',
-  'TailwindCSS',
-  'Shadcn',
-  'OAuth',
-  'Stripe',
   'aws',
+  'OAuth',
+  'Shadcn',
+  'TailwindCSS',
+  'Redux Toolkit',
   'Vercel',
+  'Upstach',
 ];
 
 const contributors = [
