@@ -151,22 +151,22 @@ export const EN = {
     {
       image:
         'https://utfs.io/f/b85d39bc-74c0-4d79-9b2c-601e99109706-1kyf6l.png',
-      href: '/project-2',
+      href: '/work/exa-sphere',
     },
     {
       image:
         'https://utfs.io/f/7d5b5593-bab8-4171-862e-9a6038f027b1-kz5e2z.png',
-      href: '/project-3',
+      href: '/work/evoke-estate',
     },
     {
       image:
         'https://utfs.io/f/561886eb-1834-49c0-9cfd-8a1124b95262-ok07f4.png',
-      href: '/project-5',
+      href: '/work/career-compass',
     },
     {
       image:
         'https://utfs.io/f/6b044862-089e-49b7-92e8-949af07cf8c0-60veh2.png',
-      href: '/project-4',
+      href: '/',
     },
   ],
 

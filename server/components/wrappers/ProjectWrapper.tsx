@@ -23,6 +23,7 @@ interface Contributors {
  * @liveUrl - the live url of the project
  * @stack - the stack of the project
  * @contributors - the team members of the project
+ * @creationDate - the creation date of the project
  * @returns The project wrapper component.
  */
 const ProjectWrapper = ({
