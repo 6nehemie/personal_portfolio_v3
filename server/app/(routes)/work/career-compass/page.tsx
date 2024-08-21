@@ -1,4 +1,6 @@
+import MarkdownWrapper from '@/components/wrappers/MarkdownWrapper';
 import ProjectWrapper from '@/components/wrappers/ProjectWrapper';
+import { loadMarkdown } from '@/utils/functions';
 
 const stack = [
   'Vite',
@@ -25,6 +27,7 @@ const contributors = [
  * @returns The CareerCompass project page component
  */
 const CareerCompass = async () => {
+  const markdownContent = await loadMarkdown('docs/career-compass/main.md');
   return (
     <ProjectWrapper
       imageUrl="https://utfs.io/f/d3cb9692-d33b-424f-8364-4c47b06da09d-z58s10.png"
@@ -35,7 +38,7 @@ const CareerCompass = async () => {
       liveUrl="https://career-compass.ch/"
       githubUrl="https://github.com/NehemieMbg/nehemie_fullstack-app"
     >
-      <div>test</div>
+      <MarkdownWrapper content={markdownContent} />
     </ProjectWrapper>
   );
 };

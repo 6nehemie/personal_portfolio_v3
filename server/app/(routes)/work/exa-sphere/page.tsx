@@ -35,7 +35,7 @@ const contributors = [
  * @returns The ExaSphere project page component
  */
 const ExaSphere = async () => {
-  const markdownContent = await loadMarkdown('docs/exa-sphere.md');
+  const markdownContent = await loadMarkdown('docs/exa-sphere/main.md');
 
   return (
     <ProjectWrapper

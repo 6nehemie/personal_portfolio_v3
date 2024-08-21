@@ -30,7 +30,7 @@ const contributors = [
  * @returns The Aixela project page component
  */
 const Aixela = async () => {
-  const markdownContent = await loadMarkdown('docs/aixela.md');
+  const markdownContent = await loadMarkdown('docs/aixela/main.md');
 
   return (
     <ProjectWrapper
