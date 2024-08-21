@@ -56,7 +56,7 @@ const ProjectWrapper = ({
           width={1728}
           height={1117}
           priority
-          className=""
+          className="w-full"
         />
       </div>
 
