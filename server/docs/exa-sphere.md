@@ -1,91 +1,20 @@
-# exa-sphere
+### What is the project?
 
-Exa Sphere is an innovative app that allows users to generate cover letters by creating different job profiles. These profiles are used for quick generation and are saved in the database, offering a seamless experience for crafting professional cover letters tailored to specific job opportunities.
+ExaSphere is an innovative application designed to simplify the process of generating personalized cover letters. It leverages advanced AI technology to craft cover letters tailored to specific job applications, helping users present their skills and experience effectively. The platform aims to streamline the job application process, particularly for those who may struggle with writing or lack the time to create customized cover letters for each job.
 
-## Project Overview
+### What problem does this project solve?
 
-Exa Sphere simplifies the cover letter creation process by providing a user-friendly interface to enter job details, such as job title, company, location, job type, experience level, required skills, key responsibilities, company additional information, and additional information. Users can then generate personalized cover letters based on these profiles, leveraging advanced AI models powered by GPT-4.
+ExaSphere addresses the common challenge of creating unique, well-structured cover letters for multiple job applications. Job seekers often find it time-consuming and daunting to write cover letters that stand out, especially when applying to several positions at once. ExaSphere solves this problem by automating the writing process, generating professional, personalized cover letters with just a few clicks, ensuring consistency and saving users significant time.
 
-Check out the design on [Figma](https://www.figma.com/file/GluIauxVpVQ4xv037S9478/Exa-Sphere?type=design&node-id=0%3A1&mode=design&t=hwRQXqItRbMfzDfb-1)
+### What are the key features that make this project great?
 
-![Job Profiles](./figma-design/new-design.png)
+ExaSphere stands out due to its powerful integration of AI technology, which generates high-quality cover letters tailored to individual job postings. Key features include:
 
-## Features
+- **AI-Driven Personalization:** The application uses sophisticated AI algorithms to craft cover letters that highlight relevant skills and experiences, tailored to the specific job description.
+- **User-Friendly Interface:** With an intuitive design, ExaSphere is easy to navigate, allowing users to quickly generate and edit their cover letters.
+- **History Tracking:** Users can access previously generated cover letters, making it easy to manage multiple applications.
+- **Preview and Edit Functionality:** Before finalizing their cover letter, users can preview and make adjustments, ensuring the output aligns perfectly with their needs.
 
-- **Profile Creation:** Users can create and save multiple job profiles with detailed information about job requirements and qualifications.
-- **Cover Letter Generation:** Utilize GPT-4 AI models to generate customized cover letters based on the saved job profiles.
-- **User Authentication:** Secure authentication using NextAuth for OAuth and JWT for spring boot, ensuring user data privacy and security.
-- **Avatar Storage:** AWS S3 integration for storing user avatars and profile images.
+### What challenges did I encounter?
 
-## Technologies Used
-
-- **Frontend:** Next.js, Tailwind CSS
-- **Backend:** Spring Boot (Rest Api), JPA, Security, Jwt
-- **Authentication:** NextAuth, Jwt
-- **AI Model:** GPT-4
-- **Database:** PostgreSQL
-- **File Storage:** AWS S3
-
-## Getting Started
-
-**Clone the Repository:**
-
-```bash
-git clone https://github.com/NehemieMbg/exa-sphere.git
-```
-
-**Navigate to the Frontend Directory:**
-
-```bash
-cd exa-sphere/client
-```
-
-**Install Dependencies:**
-
-```bash
-npm install
-```
-
-**Set up Environment Variables:**
-
-Create a `.env` file in the frontend directory and add the following:
-
-```makefile
-SPRING_API_URL=your_backend_api_url
-```
-
-**Start the Development Server:**
-
-```shell
-npm run dev
-```
-
-**Navigate to the Backend Directory:**
-
-```bash
-cd ../server
-```
-
-**Install Backend Dependencies:**
-
-```bash
-mvn install
-```
-
-**Set up Database:**
-Configure your PostgreSQL database and update the application properties accordingly.
-
-**Access the Application:**
-Open your web browser and navigate to `http://localhost:3000` to access Exa Sphere.
-
-## Contributing
-
-This project is currently not open for contributions as it is a personal project. However, feedback and suggestions are always welcome!
-
-## Contact
-
-For questions or inquiries about Exa Sphere, feel free to contact the project owner:
-
-- **Name:** Nehemie Mombanga
-- **Email:** nehemie.mbg@gmail.com
-- **LinkedIn:** https://www.linkedin.com/in/nehemie-mombanga/
+One of the biggest challenges in developing ExaSphere was integrating Spring AI with the OpenAI API to seamlessly use the GPT-4 (or GPT-3.5) language model for generating cover letters. The process required deep technical understanding to ensure that the AI could efficiently process user inputs and produce coherent, high-quality outputs. Overcoming this challenge involved extensive testing and debugging to make sure that the AI integration worked smoothly within the overall application architecture.

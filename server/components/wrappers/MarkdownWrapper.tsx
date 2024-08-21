@@ -1,6 +1,5 @@
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
-import rehypeRaw from 'rehype-raw';
 
 /**
  * A wrapper for markdown content
@@ -9,7 +8,7 @@ import rehypeRaw from 'rehype-raw';
  */
 const MarkdownWrapper = ({ content }: { content: string }) => {
   return (
-    <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]}>
+    <ReactMarkdown className={'markdown'} remarkPlugins={[remarkGfm]}>
       {content}
     </ReactMarkdown>
   );

@@ -140,7 +140,7 @@ const ProjectWrapper = ({
             })}
           </div>
 
-          <div className="text-nm-gray-200 space-y-5 pt-5">{children}</div>
+          <div className="text-nm-gray-200 space-y-5">{children}</div>
 
           <div className="xl:hidden w-full text-sm space-y-10">
             <div className="space-y-5">
