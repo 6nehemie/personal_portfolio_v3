@@ -43,7 +43,7 @@ const About = () => {
               key={index}
               src={image.url!}
               alt={image.name}
-              className={cn('w-auto object-contain', {
+              className={cn('w-auto object-cover h-full', {
                 'max-lg:hidden': index === 1,
               })}
               width={1153}
