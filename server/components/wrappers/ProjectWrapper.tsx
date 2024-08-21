@@ -144,7 +144,7 @@ const ProjectWrapper = ({
 
           <div className="xl:hidden w-full text-sm space-y-10">
             <div className="space-y-5">
-              <h3 className="text-sm font-medium text-nm-gray-200">Team</h3>
+              <h3 className="text-lg font-semibold text-nm-gray-200">Team</h3>
 
               <div className="space-y-5">
                 {contributors?.map((contributor) => {
