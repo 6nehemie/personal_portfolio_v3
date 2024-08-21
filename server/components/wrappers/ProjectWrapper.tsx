@@ -49,14 +49,16 @@ const ProjectWrapper = ({
 }) => {
   return (
     <div className="xl:p-side xl:pt-10 pb-10 space-y-10">
-      <Image
-        src={imageUrl}
-        alt={title}
-        width={1728}
-        height={1117}
-        priority
-        className="w-full max-[537px]:h-[34%] object-cover xl:rounded-md overflow-hidden"
-      />
+      <div className="w-full xl:rounded-md overflow-hidden">
+        <Image
+          src={imageUrl}
+          alt={title}
+          width={1728}
+          height={1117}
+          priority
+          className=""
+        />
+      </div>
 
       <div className="flex gap-14 w-full mx-auto max-xl:p-side">
         <div className="space-y-5 max-xl:space-y-8 w-full">
