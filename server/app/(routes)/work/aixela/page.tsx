@@ -1,4 +1,6 @@
+import MarkdownWrapper from '@/components/wrappers/MarkdownWrapper';
 import ProjectWrapper from '@/components/wrappers/ProjectWrapper';
+import { loadMarkdown } from '@/utils/functions';
 
 const stack = [
   'Figma',
@@ -27,7 +29,9 @@ const contributors = [
  * The Aixela project page
  * @returns The Aixela project page component
  */
-const Aixela = () => {
+const Aixela = async () => {
+  const markdownContent = await loadMarkdown('docs/aixela.md');
+
   return (
     <ProjectWrapper
       imageUrl="https://utfs.io/f/cc7e3281-5168-49b2-97e0-fd153878a78a-34dhop.png"
@@ -39,32 +43,7 @@ const Aixela = () => {
       githubUrl="https://github.com/NehemieMbg/aixela"
       figmaUrl="https://www.figma.com/design/EsGwpbqPb4qGhzyrY7SSDV/Aixela-App?node-id=0-1&t=wrP9keoJq7MkUk4U-1"
     >
-      <div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dolorum
-          quidem totam odit dolores voluptatem excepturi atque, expedita
-          nesciunt aliquid fuga rem nulla laboriosam officiis sed delectus
-          sequi! Debitis, deleniti!
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dolorum
-          quidem totam odit dolores voluptatem excepturi atque, expedita
-          nesciunt aliquid fuga rem nulla laboriosam officiis sed delectus
-          sequi! Debitis, deleniti!
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dolorum
-          quidem totam odit dolores voluptatem excepturi atque, expedita
-          nesciunt aliquid fuga rem nulla laboriosam officiis sed delectus
-          sequi! Debitis, deleniti!
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dolorum
-          quidem totam odit dolores voluptatem excepturi atque, expedita
-          nesciunt aliquid fuga rem nulla laboriosam officiis sed delectus
-          sequi! Debitis, deleniti!
-        </p>
-      </div>
+      <MarkdownWrapper content={markdownContent} />
     </ProjectWrapper>
   );
 };
