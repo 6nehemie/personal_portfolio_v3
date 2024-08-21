@@ -1,4 +1,6 @@
+import MarkdownWrapper from '@/components/wrappers/MarkdownWrapper';
 import ProjectWrapper from '@/components/wrappers/ProjectWrapper';
+import { loadMarkdown } from '@/utils/functions';
 
 const stack = [
   'Figma',
@@ -32,44 +34,21 @@ const contributors = [
  * The ExaSphere project page
  * @returns The ExaSphere project page component
  */
-const ExaSphere = () => {
+const ExaSphere = async () => {
+  const markdownContent = await loadMarkdown('docs/exa-sphere.md');
+
   return (
     <ProjectWrapper
       title="ExaSphere"
       stack={stack}
-      creationDate="May 23, 2024"
+      creationDate="Apr 7, 2024"
       contributors={contributors}
       liveUrl="https://exa-sphere.vercel.app"
       imageUrl="https://utfs.io/f/4131d085-e2e3-4fa3-9306-b18ca2b3c893-jq6x79.png"
       githubUrl="https://github.com/NehemieMbg/exa-sphere"
       figmaUrl="https://www.figma.com/design/GluIauxVpVQ4xv037S9478/Exa-Sphere?t=HIjdl9YCLwol7zU1-1"
     >
-      <div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dolorum
-          quidem totam odit dolores voluptatem excepturi atque, expedita
-          nesciunt aliquid fuga rem nulla laboriosam officiis sed delectus
-          sequi! Debitis, deleniti!
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dolorum
-          quidem totam odit dolores voluptatem excepturi atque, expedita
-          nesciunt aliquid fuga rem nulla laboriosam officiis sed delectus
-          sequi! Debitis, deleniti!
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dolorum
-          quidem totam odit dolores voluptatem excepturi atque, expedita
-          nesciunt aliquid fuga rem nulla laboriosam officiis sed delectus
-          sequi! Debitis, deleniti!
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dolorum
-          quidem totam odit dolores voluptatem excepturi atque, expedita
-          nesciunt aliquid fuga rem nulla laboriosam officiis sed delectus
-          sequi! Debitis, deleniti!
-        </p>
-      </div>
+      <MarkdownWrapper content={markdownContent} />
     </ProjectWrapper>
   );
 };

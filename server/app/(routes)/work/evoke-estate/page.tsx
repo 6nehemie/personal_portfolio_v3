@@ -33,7 +33,7 @@ const EvokeEstate = () => {
       imageUrl="https://utfs.io/f/f5623a6f-89be-4a35-bfae-f1b24268539c-mulkwc.png"
       title="Evoke Estate"
       stack={stack}
-      creationDate="March 26, 2024"
+      creationDate="Mar 26, 2024"
       contributors={contributors}
       // liveUrl="https://evoke-estate.vercel.app/"
       githubUrl="https://github.com/NehemieMbg/evoke-estate"

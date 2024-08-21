@@ -7,6 +7,7 @@ import {
   Next,
   OAuth,
   OpenAi,
+  ReactIcon,
   Redux,
   Resend,
   Shadcn,
@@ -16,6 +17,7 @@ import {
   TypeScript,
   Upstash,
   Vercel,
+  Vite,
   Zod,
 } from '@/components/icons';
 
@@ -59,6 +61,8 @@ const StackIcon = (stack: string): React.ReactNode => {
     resend: <Resend className={className} size={iconSize} />,
     springboot: <SpringBoot className={className} size={iconSize} />,
     openai: <OpenAi className={className} size={iconSize} />,
+    vite: <Vite className={className} size={iconSize} />,
+    ReactIcon: <ReactIcon className={className} size={iconSize} />,
     upstach: null,
   };
 

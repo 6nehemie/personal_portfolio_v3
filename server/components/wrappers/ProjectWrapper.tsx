@@ -59,7 +59,7 @@ const ProjectWrapper = ({
       />
 
       <div className="flex gap-14 w-full mx-auto max-xl:p-side">
-        <div className="space-y-5 max-xl:space-y-8">
+        <div className="space-y-5 max-xl:space-y-8 w-full">
           <div className="space-y-2">
             <div className="flex justify-between items-center">
               <h1 className="text-2xl font-medium">{title}</h1>
@@ -140,7 +140,7 @@ const ProjectWrapper = ({
             })}
           </div>
 
-          <div className="text-nm-gray-200">{children}</div>
+          <div className="text-nm-gray-200 space-y-5 pt-5">{children}</div>
 
           <div className="xl:hidden w-full text-sm space-y-10">
             <div className="space-y-5">

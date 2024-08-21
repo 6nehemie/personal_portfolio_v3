@@ -15,3 +15,5 @@ export { default as Resend } from './Resend';
 export { default as SpringBoot } from './SpringBoot';
 export { default as OpenAi } from './OpenAi';
 export { default as Upstash } from './Upstash';
+export { default as Vite } from './Vite';
+export { default as ReactIcon } from './ReactIcon';

@@ -1,22 +1,14 @@
 import ProjectWrapper from '@/components/wrappers/ProjectWrapper';
 
 const stack = [
-  'Figma',
-  'Java',
+  'Vite',
+  'React',
   'TypeScript',
-  'Spring Boot',
-  'Resend',
-  'Open Ai',
-  'Railway',
-  'Next.js',
-  'Zod',
-  'aws',
-  'OAuth',
-  'Shadcn',
   'TailwindCSS',
-  'Redux Toolkit',
-  'Vercel',
-  'Upstach',
+  'Node.js',
+  'Express',
+  'jwt',
+  // 'aws',
 ];
 
 const contributors = [
@@ -32,43 +24,18 @@ const contributors = [
  * The CareerCompass project page
  * @returns The CareerCompass project page component
  */
-const CareerCompass = () => {
+const CareerCompass = async () => {
   return (
     <ProjectWrapper
       imageUrl="https://utfs.io/f/d3cb9692-d33b-424f-8364-4c47b06da09d-z58s10.png"
       title="Career Compass"
       stack={stack}
-      creationDate="Oct 2, 2023"
+      creationDate="Sep 23, 2023"
       contributors={contributors}
       liveUrl="https://career-compass.ch/"
       githubUrl="https://github.com/NehemieMbg/nehemie_fullstack-app"
     >
-      <div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dolorum
-          quidem totam odit dolores voluptatem excepturi atque, expedita
-          nesciunt aliquid fuga rem nulla laboriosam officiis sed delectus
-          sequi! Debitis, deleniti!
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dolorum
-          quidem totam odit dolores voluptatem excepturi atque, expedita
-          nesciunt aliquid fuga rem nulla laboriosam officiis sed delectus
-          sequi! Debitis, deleniti!
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dolorum
-          quidem totam odit dolores voluptatem excepturi atque, expedita
-          nesciunt aliquid fuga rem nulla laboriosam officiis sed delectus
-          sequi! Debitis, deleniti!
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dolorum
-          quidem totam odit dolores voluptatem excepturi atque, expedita
-          nesciunt aliquid fuga rem nulla laboriosam officiis sed delectus
-          sequi! Debitis, deleniti!
-        </p>
-      </div>
+      <div>test</div>
     </ProjectWrapper>
   );
 };
