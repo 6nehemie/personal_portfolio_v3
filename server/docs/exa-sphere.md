@@ -8,12 +8,11 @@ ExaSphere addresses the common challenge of creating unique, well-structured cov
 
 ### What are the key features that make this project great?
 
-ExaSphere stands out due to its powerful integration of AI technology, which generates high-quality cover letters tailored to individual job postings. Key features include:
+ExaSphere stands out due to its powerful use of the OpenAI API, which generates high-quality cover letters tailored to individual job postings. Key features include:
 
-- **AI-Driven Personalization:** The application uses sophisticated AI algorithms to craft cover letters that highlight relevant skills and experiences, tailored to the specific job description.
+- **AI-Powered Prompts:** The application sends specific, well-crafted prompts to the OpenAI API, which then generates cover letters that highlight relevant skills and experiences based on the job description.
 - **User-Friendly Interface:** With an intuitive design, ExaSphere is easy to navigate, allowing users to quickly generate and edit their cover letters.
 - **History Tracking:** Users can access previously generated cover letters, making it easy to manage multiple applications.
-- **Preview and Edit Functionality:** Before finalizing their cover letter, users can preview and make adjustments, ensuring the output aligns perfectly with their needs.
 
 ### What challenges did I encounter?
 
