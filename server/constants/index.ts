@@ -30,7 +30,7 @@ export const EN = {
       label: 'LinkedIn',
       href: 'https://www.linkedin.com/in/nehemie-mombanga/',
     },
-    { label: 'Github', href: 'https://github.com/NehemieMbg' },
+    { label: 'Github', href: 'https://github.com/6nehemie' },
     { label: 'Dribbble', href: 'https://dribbble.com/6nehemie' },
   ],
 
@@ -218,7 +218,7 @@ export const EN = {
         label: 'LinkedIn',
         href: 'https://www.linkedin.com/in/nehemie-mombanga/',
       },
-      { label: 'Github', href: 'https://github.com/NehemieMbg' },
+      { label: 'Github', href: 'https://github.com/6nehemie' },
       { label: 'Dribbble', href: 'https://dribbble.com/6nehemie' },
     ],
   },
