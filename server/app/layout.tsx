@@ -1,13 +1,14 @@
-import type { Metadata } from 'next';
-import { Raleway } from 'next/font/google';
+import React from "react";
+
+import type {Metadata} from 'next';
+import {Raleway} from 'next/font/google';
 import './globals.css';
 import Sidebar from '@/components/navigations/Sidebar';
-import { cn } from '@/lib/utils';
+import {cn} from '@/lib/utils';
 import Navbar from '@/components/navigations/Navbar';
-import Image from 'next/image';
 import Footer from '@/components/footer/Footer';
 
-const raleway = Raleway({ subsets: ['latin'] });
+const raleway = Raleway({subsets: ['latin']});
 
 export const metadata: Metadata = {
   title: 'Nehemie Mombanga',
@@ -24,28 +25,27 @@ export const metadata: Metadata = {
  * @returns The RootLayout component
  */
 export default function RootLayout({
-  children,
-}: Readonly<{
+                                     children,
+                                   }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body
-        className={cn('main-grid overflow-x-hidden', {
-          [raleway.className]: raleway.className,
-        })}
-      >
-        <div className="fixed z-[1000000] top-0 bottom-0 right-0 left-0 overlay pointer-events-none"></div>
+    <body
+      className={cn('main-grid overflow-x-hidden', {
+        [raleway.className]: raleway.className,
+      })}
+    >
+    <div className="fixed z-[1000000] top-0 bottom-0 right-0 left-0 overlay pointer-events-none"></div>
+    <Sidebar/>
+    <Navbar/>
 
-        <Sidebar />
-        <Navbar />
+    <div className="section-grid w-full space-y-[160px]">
+      {children}
 
-        <div className="section-grid w-full space-y-[160px]">
-          {children}
-
-          <Footer />
-        </div>
-      </body>
+      <Footer/>
+    </div>
+    </body>
     </html>
   );
 }
